@@ -1,3 +1,14 @@
+@media (min-width: 1200px){
+    .container-xl, .container-xxl {
+      max-width: 80vw !important;
+    }
+  }
+
+@media (max-width: 960px) {
+    .logo{
+        height: 30px !important;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,21 +17,20 @@ p{
     font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     font-size: 23px;
     text-align: center;
-    color: white;
+    color: white !important;
 }
 h1{
     font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
+    font-weight: 900 !important;
     text-align: center;
-    color: white;
+    color: white !important;
 }
 h2{
     font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
-    color: white;
+    color: white !important;
     margin-bottom: 1rem;
 }
 main{
@@ -34,7 +44,7 @@ main{
     background-position: center center;
 }
 .logo{
-    height: 54px;
+    height: 45px;
 }
 .logo :first-child :first-child{
     fill: red;
@@ -46,10 +56,16 @@ main{
     height: 700px;
     width: 100%;
     opacity: 0.44;
+    
+}
+.page1{
+    max-width: 1080px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
 }
 nav{
     padding-top: 20px;
-    width: 80vw;
+    
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -77,11 +93,11 @@ nav{
     color: white;
     border: 1px solid;
     border-radius: 4px;
-    height: 35px;
+    height: 35px !important;
+    font-size: 17px !important;
     width: 100px;
 }
 .text{
-    width: 80vw;
     position: relative;
     margin: auto;
     display: flex;
@@ -152,14 +168,15 @@ nav{
     margin-top: 10px;
 }
 .page2{
-    height: 510px;
+    height: 80vh;
     background-color: black;
     margin-bottom: 8px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     color: white;
-    text-align: center;
+    text-align: left;
+    margin-top: 15px;
 }
 .page2 .content div{
     display: inline-block;
@@ -168,31 +185,37 @@ nav{
     align-items: center;
     justify-items: center;
     justify-content: center;
-    width: 50rem;
+    width: 50%;
 }
 .content{
     display: flex;
     flex-direction: row;
     width: 80vw;
     margin: auto;
-    height: 510px;
+    height: 100%;
 }
 .tv_1{
     position: relative;
     margin: auto;
+    height: 100%;
+    object-fit: contain;
     
 }
 .tv_1 video{
     position: absolute;
-  left: 13%;
-  top: 21%;
-  z-index: 0;
-  width: 73%;
+    left: 5%;
+    top: 26%;
+    z-index: 0;
+    width: 100%;
+    object-fit: contain;
+    height: 43%;
 
 }
 .tv_1 img{
     position: relative;
     z-index: 2;
+    height: 80%;
+    object-fit: contain;
     width: 100%;
 }
 .page2 p{
@@ -331,13 +354,17 @@ nav{
     align-items: center;
     padding: 4.5rem 0;
 }
+.page6 div{
+    display: flex;
+    flex-direction: column !important;
+}
 .questons{
     display: flex;
     align-items: flex-start;
 }
 .last_buttons{
     width: 73vw;
-    height: 2.7vw;
+    height: 80px;
     padding: 1.5rem;
     background-color: rgb(46, 46, 46);
     margin-bottom: 0.7rem;
@@ -349,10 +376,10 @@ nav{
     background-color: rgb(73, 73, 73);
 }
 .page6 h1{
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 .page6 .p2{
-    font-size: 20px;
+    font-size: 20px !important;
 }
 footer {
     background-color: black;
@@ -384,7 +411,7 @@ a{
 }
 .last p{
     text-align: left;
-    font-size: 15px;
+    font-size: 15px !important;
     font-weight: 100;
     margin-top: 15px;
     
